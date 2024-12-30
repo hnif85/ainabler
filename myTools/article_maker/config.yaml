@@ -1,0 +1,61 @@
+article_template:
+  metadata:
+    type: "LinkedIn"
+    category: "Technology and Automation"
+    language: "Indonesia"
+    tone: "Professional but engaging, informative and fun"
+    length: "1000-1500 words"
+
+  structure:
+    title:
+      content: "How [Topic] Will [Impact Statement]"
+      description: "How Artificial Intelligence and Automation Will Create $15.7 Trillion in Value for Businesses"
+    introduction:
+      content: >
+        Artificial intelligence (AI) and automation will create $15.7 trillion in value for businesses over the next decade. 
+        Companies that understand and leverage this technology stand to achieve huge growth, but it requires strategic investment and planning.
+    body:
+      sections:
+        - title: "The Potential of AI"
+          content: >
+            AI and its ecosystem, including the Internet of Things (IoT), allow businesses to enhance decision-making, streamline operations, 
+            improve customer offerings, and monetize data streams.
+        - title: "Challenges of AI Adoption"
+          content: >
+            Implementing AI requires significant investment in infrastructure, skills, and alignment with business objectives. 
+            Regulatory and compliance issues related to large datasets are also critical considerations.
+        - title: "Case Studies"
+          subsections:
+            - title: "Healthcare Innovation"
+              content: >
+                The University of Alabama in Huntsville uses AI and high-performance computing (HPC) to develop drugs and treatments for illnesses, 
+                drastically speeding up research processes and enabling small teams to achieve large-scale results.
+            - title: "Energy Efficiency"
+              content: >
+                CenterPoint Energy uses AI to process 221 million meter readings daily, improving decision-making, 
+                predicting outages, and enhancing customer satisfaction while reducing costs and emissions.
+        - title: "Strategic AI Implementation"
+          content: >
+            Strategic AI implementation drives better predictions, decision-making, customer insights, and operational efficiency, 
+            creating opportunities for new revenue streams.
+        - title: "Getting Started with AI"
+          content: >
+            Start with identifying simple use cases or "quick wins" to validate AI's impact. 
+            Build a data-first culture by demonstrating tangible results from these initial efforts.
+    conclusion:
+      content: >
+        AI offers transformative potential for businesses of all sizes. By embracing tools and strategies designed for scalability, 
+        even small organizations can leverage AI to drive growth, efficiency, and innovation.
+
+  contents:
+    - title: "How to Overcome Resistance to AI Adoption"
+      content: >
+        Resistance to AI often comes from employees and leadership. Demonstrating quick wins and educating teams about AI's value can secure buy-in.
+    - title: "HPE's Accelerate AI Bundles"
+      content: >
+        HPE provides pre-packaged AI solutions with compute power, tools, and consulting services to help businesses start their AI journey effectively.
+
+  call_to_action:
+    content: >
+      With accessible tools and strategies, businesses can position themselves as leaders in the AI-driven future. 
+      Start your AI journey today to unlock its transformative value.
