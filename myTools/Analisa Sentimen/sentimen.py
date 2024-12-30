@@ -2,10 +2,32 @@ import streamlit as st
 from groq import Groq
 import csv
 import os
-from home import llm_groq
 import pandas as pd
 
 st.set_page_config("Analisa sentimen")
+
+def llm_groq(message, model, assistant="helper",groq_api="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"):
+    """message: str, model: str, assistant: str -> str"""
+    groq_key1 = "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" 
+    client = Groq()
+
+    response = client.chat.completions.create(
+        messages=[
+            {"role": "system", "content": f"You are great assistant for {assistant} and ready to help user with any occasion. "},
+            {"role": "user", "content": message}
+        ],
+        model=model,
+        temperature=0.5,
+        max_tokens=4000,
+        top_p=1,
+        stop=None,
+        stream=False,
+        api_key=groq_api
+    )
+
+    result = response.choices[0].message.content
+    return result
+
 
 def classify_sentiment(sentiment):
     valid_sentiments = ['Positif', 'Netral', 'Negatif']
@@ -17,7 +39,15 @@ uploaded_file = st.file_uploader("Upload file CSV", type="csv")
 analyse = st.button("analisa")
 
 
-if analyse:
+
+with st.sidebar:
+    st.write("Analisis sentimen menggunakan model Open Source running by Groq")
+    groq_api = st.text_input("Input kode API Groq")
+    llm_options = st.selectbox("Pilih LLM",options=["llama-3.1-70b-versatile", "llama3-8b-8192", "llama-3.3-70b-versatile"]) 
+     
+
+
+if analyse and groq_api :
     # Read CSV file
     df = pd.read_csv(uploaded_file,delimiter=";")
     
@@ -30,7 +60,7 @@ if analyse:
     # Perform sentiment analysis
     #model = "llama-3.1-70b-versatile"
     #model = "llama3-8b-8192"
-    model = "llama-3.3-70b-versatile"
+    model = llm_options
     total_texts = len(df['full_text'])
     allText = df['full_text']
 
@@ -38,6 +68,7 @@ if analyse:
     
     for i, text in enumerate(df['full_text'], 1):
         # Update progress bar
+        st.write(f"Analisis teks ke-{i} dari {total_texts}")
         progress_bar.progress(i / total_texts)
         
         # Perform sentiment analysis with error handling
@@ -62,7 +93,7 @@ if analyse:
 
                     Jawaban Anda: [Positif/Negatif]
                     """
-            muatan = llm_groq(prompt, model)
+            muatan = llm_groq(prompt, model,groq_api= groq_api)
             sentiments.append(classify_sentiment(muatan))
 
             # Emotion Analysis
@@ -80,6 +111,7 @@ if analyse:
     
     # Add sentiment and emotion columns to DataFrame
     df['sentiment'] = sentiments
+
    
     
     # Save results to a new CSV file with semicolon delimiter
