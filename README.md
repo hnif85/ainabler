@@ -16,8 +16,7 @@ Follow these steps to set up the project locally:
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   https://github.com/hnif85/ainabler.git
    ```
 
 2. **Create a Virtual Environment**
@@ -62,15 +61,6 @@ Follow these steps to set up the project locally:
 - **Missing Dependencies:** Ensure all dependencies are installed correctly by re-running `pip install -r requirements.txt`.
 - **Invalid API Key:** Verify your Groq API key in the `.env` file.
 - **Connection Issues:** Check your internet connection and API access.
-
-## Contributing
-We welcome contributions to enhance the project. Please follow these steps:
-1. Fork the repository.
-2. Create a new branch for your feature/fix.
-3. Submit a pull request detailing your changes.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Acknowledgments
 Special thanks to the Groq team for providing robust API support and the Streamlit community for their excellent resources.
