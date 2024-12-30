@@ -1,7 +1,12 @@
-# README: LLM Use Case Project
+<h1 align="center"><b>Hi , I'm Hanif </b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
+
+<p align="center">
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=cyan&size=25&center=true&vCenter=true&width=600&height=100&lines=I+am+AI+enthusiast;Great+product+manager;My+goals+is+to+make+your+business+better;My+goals+is+to+make+your+business+more+efficient"></a>
+</p>
+
 
 ## About Me
-My name is Hanif. I am a Product Manager for an application maker leveraging generative AI as its core strength. I am open to professional consultations to help enable AI in your business, making it better and more efficient.
+My name is Hanif. I am a Product Manager for an application maker leveraging generative AI as its core strength. I am open to professional consultations to help enable AI in your business, making it better and more efficient. contat me at hanif.rinardi84@gmail.com
 
 
 ## Overview
@@ -67,7 +72,7 @@ Follow these steps to set up the project locally:
 - 🌐 **Connection Issues:** Check your internet connection and API access.
 
 ## Acknowledgments
-Special thanks to the Groq team for providing robust API support and the Streamlit community for their excellent resources.
+Special thanks to the Groq team for providing robust API support and the Streamlit community for their excellent resources. Thanks to https://github.com/durgeshsamariya for the great readme.md template
 
 ---
 
