@@ -19,47 +19,6 @@ Before running the project, ensure the following:
 2. 🔑 **Groq API Key:** Obtain an API key from Groq and keep it handy.
 3. 🌐 **Internet Connection:** The application requires a stable internet connection to communicate with the Groq API.
 
-## Installation
-
-Follow these steps to set up the project locally:
-
-1. **Clone the Repository**
-   ```bash
-   https://github.com/hnif85/ainabler.git
-   ```
-
-2. **Create a Virtual Environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Set Up Environment Variables**
-   Create a `.env` file in the root directory and add your Groq API key:
-   ```env
-   GROQ_API_KEY=your_api_key_here
-   ```
-
-## Usage
-
-1. **Run the Application**
-   Start the Streamlit app using the following command:
-   ```bash
-   streamlit run app.py
-   ```
-
-2. **Access the Application**
-   Open your web browser and navigate to `http://localhost:8501` to access the application interface.
-
-3. **Interact with the Features**
-   - 📝 Input prompts or queries for the LLM.
-   - 🤖 Leverage agentic capabilities for complex tasks.
-   - 📊 View real-time results powered by Groq API.
 
 ## Features
 - 🚀 **Agentic LLMs:** Supports advanced agentic tasks.
